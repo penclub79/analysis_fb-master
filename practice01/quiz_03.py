@@ -1,6 +1,10 @@
 s = '/usr/local/bin/python'
 
-s.strip('')
+n = s.strip('/')
+n = n.split('/')
+print(n)
+
+
+s = s.rsplit('/', 1)
 print(s)
-s.split('/')
-print(s)
+
