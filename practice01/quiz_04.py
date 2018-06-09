@@ -8,21 +8,42 @@ s = """
         </p>
     </body>
 </html>"""
+s = """
+<html>
+    <body style='background-color:#ffff'>
+        <h4>Click</h4>
+        <a href='http://www.python.org'>Here</a>
+        <p>
+        	To connect to the most powerful tools in the world.
+        </p>
+    </body>
+</html>"""
+s = s.replace("""
+<html>
+    <body style='background-color:#ffff'>
+        <h4>Click</h4>
+        <a href='http://www.python.org'>Here</a>
+        <p>
+        	To connect to the most powerful tools in the world.
+        </p>
+    </body>
+</html>""","""
 
-s = s.strip().splitlines()
-for s1 in s:
-    print(s1.split('\n'))
-
-
-else:
-    print()
-
-s = len(s)
-
+    
+        Click
+        Here
+        
+        	To connect to the most powerful tools in the world.
+</html>""")
+print(s)
 
 
 
-    # s = s.split('\n')[1].split('<')[2].split('>')
+
+
+
+
+     # s = s.split('\n')[1].split('<')[2].split('>')
 
 
 
